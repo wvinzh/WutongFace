@@ -3,7 +3,7 @@ import os
 import numpy as np
 def save_face():
     txt="F:\\face_utils\\todo_name_2000.txt"
-    root_folder = "F:\\PoliticsTestSet\\normal"
+    root_folder = "F:\\TestSet\\normal"
     to_root_folder = "F://todo_names"
     to_root_folder_feature = "F://todo_names_feature"
     wface = WutongFace()
