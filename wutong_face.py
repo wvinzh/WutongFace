@@ -172,8 +172,7 @@ class WutongFace(object):
         return clsf,name_dict
 
 if __name__ == '__main__':
-    image_file = "F:\\PoliticsTestSet\\cover\\5705714_rs16_4.png"
-    # image_file = "F:\\PoliticsTestSet\\cover/1136006_54fe2ec1ecec202f48a379f1950ad8f6_big.jpg"
+    image_file = "F:\\images\\3.jpg"
     ##init a WutongFace
     wface = WutongFace()
 
@@ -184,12 +183,12 @@ if __name__ == '__main__':
 
     # 2. use detector and crop with align
     faces_align,_,_ = wface.face_align(image_file,crop_size=(150,150))
-    # print(len(faces_align))
+    print(len(faces_align))
     if len(faces_align) <= 0:
         print("no faces")
         
     feature = wface.feature_extractor('resnet',faces_align)
-    # print(feature.shape)
+    print(feature.shape)
     # 3. use detector and crop with no align
     # faces_no_align = wface.face_no_align(image_file,crop_size=(180,180))
     # faces_no_align[0].show()
@@ -197,9 +196,9 @@ if __name__ == '__main__':
 
     #4. train classifier(just need the first time)
     # wface.train_classifier()
-    svm_c, name_dict = wface.NN_classifier()
+    svm_c, name_dict = wface.get_classifier()
     #5. predict
-    pred = svm_c(feature)
+    pred = svm_c.predict(feature)
     print(pred)
     for p in pred:
         if p in name_dict:
