@@ -32,6 +32,11 @@ face_num,bounding_boxes,landmarks = wface.detect(image)
 ![](https://raw.githubusercontent.com/wvinzh/picgo-images/image/20181127141157.png)
 
 4. for face feature extract
+you should download the pretrained model file to the **feature_extractor/pretrained_model** path:
+    [sphereface-onedrive](https://1drv.ms/u/s!AseTbxZ7P87UjhLteizhWRjJAaDV)  
+    [cosface-onedrive](https://1drv.ms/u/s!AseTbxZ7P87Ujg8HHy_6iiuZvIad)  
+    [insightface-onedrive](https://1drv.ms/u/s!AMeTbxZ7P87UjhE)  
+    [VGGFace2-resnet-onedrive](https://1drv.ms/u/s!AMeTbxZ7P87UjhA)
 
    ```python
    # 2. use detector and extract feature
@@ -48,8 +53,8 @@ face_num,bounding_boxes,landmarks = wface.detect(image)
 ## Reference
 
 [mtcnn-pytorch](https://github.com/polarisZhao/mtcnn-pytorch)
+[sphereface_pytorch](https://github.com/clcarwin/sphereface_pytorch)  
+[CosFace_pytorch](https://github.com/MuggleWang/CosFace_pytorch)  
+[InsightFace_Pytorch](https://github.com/TreB1eN/InsightFace_Pytorch)  
+[VGGFace2-pytorch](https://github.com/cydonia999/VGGFace2-pytorch)  
 
-[sphereface-onedrive](https://1drv.ms/u/s!AseTbxZ7P87UjhLteizhWRjJAaDV)  
-[cosface-onedrive](https://1drv.ms/u/s!AseTbxZ7P87Ujg8HHy_6iiuZvIad)  
-[insightface-onedrive](https://1drv.ms/u/s!AMeTbxZ7P87UjhE)  
-[VGGFace2-resnet-onedrive](https://1drv.ms/u/s!AMeTbxZ7P87UjhA)
