@@ -35,8 +35,8 @@ face_num,bounding_boxes,landmarks = wface.detect(image)
 
    ```python
    # 2. use detector and extract feature
-   	faces_align,_,_ = wface.face_align(image_file,crop_size=(150,150))
-       print(len(faces_align))
+    faces_align,_,_ = wface.face_align(image_file,crop_size=(150,150))
+    print(len(faces_align))
        if len(faces_align) <= 0:
            print("no faces")
            
