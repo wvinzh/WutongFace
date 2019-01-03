@@ -39,9 +39,8 @@ face_num,bounding_boxes,landmarks = wface.detect(image)
     print(len(faces_align))
        if len(faces_align) <= 0:
            print("no faces")
-           
-   	feature = wface.feature_extractor('resnet',faces_align)
-       print(feature.shape)
+    feature = wface.feature_extractor('resnet',faces_align)
+    print(feature.shape)
    ```
 
 
