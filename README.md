@@ -33,10 +33,10 @@ face_num,bounding_boxes,landmarks = wface.detect(image)
 
 4. for face feature extract
 you should download the pretrained model file to the **feature_extractor/pretrained_model** path:
-    [sphereface-onedrive](https://1drv.ms/u/s!AseTbxZ7P87UjhLteizhWRjJAaDV)  
+    [sphereface-onedrive](https://1drv.ms/u/s!AseTbxZ7P87UjhKSqnbl0OC1FwbX)  
     [cosface-onedrive](https://1drv.ms/u/s!AseTbxZ7P87Ujg8HHy_6iiuZvIad)  
-    [insightface-onedrive](https://1drv.ms/u/s!AMeTbxZ7P87UjhE)  
-    [VGGFace2-resnet-onedrive](https://1drv.ms/u/s!AMeTbxZ7P87UjhA)
+    [insightface-onedrive](https://1drv.ms/u/s!AseTbxZ7P87UjhGZCDIvrcJ6P_3q)  
+    [VGGFace2-resnet-onedrive](https://1drv.ms/u/s!AseTbxZ7P87UjhDcH7SZQizgzs1D)
 
    ```python
    # 2. use detector and extract feature
